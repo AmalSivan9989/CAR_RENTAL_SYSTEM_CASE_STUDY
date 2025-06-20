@@ -1,0 +1,62 @@
+->Vehicle
+
+
+Vehicle -> Add Vechicle
+	-> Show All vechicles
+	-> Search Vechicle
+		-> By Id
+	        -> By Type
+		-> By Type and Model
+	-> Delete Vehicle
+Customer -> 
+	-> Add Customer
+	-> Login Customer
+	-> Search By Customerid
+	-> Search By UserName
+
+
+localhost:2003/addVehicle
+
+{
+    "vehicleType": "SEDAN",
+    "model": "BMW Alpine",
+    "location": "Mumbai",
+    "pricePerDay": 25500.0,
+    "availability": "AVAILABLE"
+}
+
+
+localhost:2003/showAllVehicles
+
+localhost:2003/searchById/1
+
+localhost:2003/searchByVehicleType/SUV
+
+localhost:2003/searchByTypeAndModel/SUV/Hyundai Creta
+
+localhost:2003/deleteVehicle/3
+
+------------------------------------------------------------------
+
+->Customer
+
+localhost:2003/showCustomer
+
+
+localhost:2003/addCustomer
+
+{  
+        "firstName": "Rourin",
+        "lastName": "Dunjin",
+        "email": "aura.kumar@example.com",
+        "username": "aura123",
+        "password": "aura@123",
+        "phoneNumber": "9876553210"
+    }
+
+localhost:2003/login/ravi123/ravi@123
+
+localhost:2003/searchByCustId/1
+
+localhost:2003/searchByCustomerName/aura123
+
